@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificador de Ropa</h1>
+        <p>Este sitio web te permite clasificar imágenes de prendas de vestir utilizando un modelo de inteligencia artificial entrenado. 
+            Simplemente sube una imagen de una prenda y nuestro clasificador de ropa te dirá qué tipo de prenda es.</p>
+        <p class="members">
+            Desarrollado por Rodrigo Soto y Cristóbal Aravena.
+        </p>   
+        <input type="file" id="imageUpload" accept="image/*">
+        <img id="previewImage" src="" alt="Imagen de Previsualización" style="display:none;">
+        <button id="classifyButton" disabled>Clasificar Imagen</button>
+        <p id="predictionResult"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
